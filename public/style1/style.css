@@ -1,0 +1,223 @@
+#wrapper {
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    
+    header {
+        background: gray;
+        overflow: auto;  
+        padding: 1rem 7rem;
+        font-weight: bold;
+    }
+    hgroup{
+    
+        color: red;
+        float: left;
+    }
+    img{
+        display: inline-block;
+        padding: 1rem 7rem;
+        }
+    
+    .contacts dl{
+        overflow:hidden;
+        padding:0;
+        margin:0;
+    
+    }
+    
+    .contacts dl dt{
+        float:left;
+        width:150px;
+        padding:5px;
+        margin:0px;
+        color: white;
+        background-color: red;
+        font-weight: bold;
+    }
+    
+     .contact-value a {
+        text-decoration: none;
+        font-weight: bold;
+        color: red;
+    }
+    
+     .contact-value{
+        float: left;
+        width: 500px;
+        margin:0px;
+        padding:5px;
+        color: red;
+        font-weight: bold;
+        background-color:black;
+    }
+    #contact h3{
+        visibility: hidden;
+    }
+    #contact{
+     margin-top: 10px ;
+    position:absolute;
+    top:-50px;
+    right:0px;
+    }
+    
+    .content{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+    
+    }
+    h3{
+        margin-bottom: 5%;
+       border-bottom: 1px gray   solid;
+       width: 100%;
+      }
+    
+      h3::before {
+        content: "";
+        height:18px;
+        width:18px;
+        background-color: red;
+        border-radius:50%;
+        display:inline-block;
+        margin-right: 5px;
+    }
+    .skills-primary::before{
+        content: "Main";
+    }
+    .skills-secondary::before{
+        content: "Other";
+    }
+    .skill{
+        width: 100%;
+        color:white;
+        padding: 5px;
+        margin: 2px;
+    }
+    .skills-primary .skill {
+        background-color: rgb(156, 154, 154);
+    }
+    .skills-secondary .skill {
+        background-color: lightgray;
+    }
+    .skill span{
+        display: inline-block;
+        padding: 5px;
+    
+    }
+    
+    .skills-primary [data-skill="5"] span{
+        width: 50%;
+        background-color: red;
+    }
+    [data-skill="3"] span{
+        width: 30%;
+        background-color: red;
+    }
+    [data-skill="1"] span{
+        width: 8%;
+        background-color: red;
+    }
+    [data-skill="9"] span{
+        width: 90%;
+        background-color: rgb(192, 11, 11);
+    }
+    [data-skill="5"] span{
+        width: 50%;
+        background-color: rgb(192, 11, 11);
+    }
+    [data-skill="7"] span{
+        width: 70%;
+        background-color:  rgb(192, 11, 11);
+    }
+    .experience-type{
+        color: red;
+        font-weight: bold;
+    }
+    .experience-institution, .experience-date-separator{
+        color: red;
+        font-weight: lighter;
+    }
+    .experience-date-separator {
+        font-weight: bold;
+    }
+    .experience-institution::before{
+        content: "@ ";
+        color: red;
+    }
+    .experience-location::before{
+        content: "In";
+        color: grey;
+    }
+    .experience-date::before{
+        content: "on";
+        color: grey;
+    }
+    .experience-details{
+        color: grey;
+        margin-left: 10px;
+    }
+    .experience h4{
+        margin-bottom: 1px;
+    }
+    @media screen and (max-width: 480px) {
+        body{
+    
+        max-width: width 480px;}
+    
+        header {
+            overflow: hidden;
+            padding: 4%;
+            margin: 3px;
+        }
+        hgroup{
+            clear: both;
+        }
+        img {
+            position: relative;
+            padding: 0%;
+        }
+        .content {
+            display: block;
+            max-width: 100%;
+            margin: 0%;
+        }
+        #contact h3{
+            visibility: visible;
+           padding: 12%;
+           position: relative;
+    
+        
+        }
+        #contact{
+        position: relative;
+       
+         }
+         .contacts {
+            display: grid;
+            grid-auto-rows: 20px;
+            grid-gap: 2px;
+            
+        }
+        .contact-type {
+          background-color: red;
+          color: white;
+            float: left;
+            width: 10%;
+            
+            
+        }
+        .contact-value {
+            background-color: white;
+            color: red;
+            width:40%;
+            
+        }
+    }
+        
+        
+        

@@ -128,11 +128,11 @@
     }
     [data-skill="5"] span{
         width: 50%;
-        background-color: rgb(192, 11, 11);
+        background-color: red;
     }
     [data-skill="7"] span{
         width: 70%;
-        background-color:  rgb(192, 11, 11);
+        background-color: red;
     }
     .experience-type{
         color: red;
